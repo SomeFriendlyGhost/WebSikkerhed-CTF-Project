@@ -1,0 +1,11 @@
+## installer sqlite3 database
+sudo apt get install sqlite3
+
+## installer dependencies fra requirements filen
+
+##For at bygge databasen skal man køre følgende kommandoer fra en python shell
+from SecureWebApplication import db
+db.create_all()
+
+##for at køre programmet
+kør filen run.py

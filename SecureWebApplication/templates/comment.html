@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="comment-container">
+        <div class="comment-container__content">
+            <img src=" {{ url_for('static', filename=image_name) }}" class="comment-container__img">
+            <form action='' method="post" class="comment-form">
+                {{ form.csrf_token }}
+                <input name="image_id" type="hidden" value={{image_id}} />
+                {{ form.comment (placeholder="Write a comment here", class="comment-form__textarea")}}
+                {{ form.submit (placeholder='Post your comment', class="comment-form__submit") }}
+            </form>
+        </div>
+        <div class="comment-container__list">
+            <h2 class="comment-container__h2">Comments:</h2>
+            {% if comment_list %}
+                {% for comment in comment_list %}
+                <div class="comment-container__box">
+                    <p class="comment-container__p">{{ comment.comment }}</p>
+                </div>
+                {% endfor %}
+            {% endif %}
+        </div>
+    </div>
+{% endblock content %}

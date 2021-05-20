@@ -1,0 +1,69 @@
+.comment-container{
+    display: block;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    min-height: 83vh;
+    width: 85%;
+    text-align: center;
+    &__content{
+        float: left;
+    }
+    &__img{
+        display: block;
+        margin: auto;
+        max-width: 900px;
+        height: auto;
+        border: 1px solid black;
+    }
+    &__h2{
+        font-family: $input-font;
+    }
+    &__list{
+        float: right;
+        overflow: scroll;
+        height: 650px;
+        border: 1px solid $ripoff-blue;
+    }
+    &__box{
+        display: block;
+        margin: auto;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        width: 600px;
+        height: auto;
+        background-color: $msg-yellow;
+        border: 1px solid $ripoff-blue;
+        border-radius: 5px;
+        text-align: left;
+        padding: 2px 5px 2px 5px;
+    }
+    &__p{
+        color: black;
+        font-family: $menu-font;        
+    }
+}
+
+.comment-form{
+    &__textarea{
+        width: 400px;
+        height: auto;
+        font-family: $input-font;
+        color: black;
+        display: block;
+        margin: auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    &__submit{
+        height: 35px;
+        width: 175px;
+        background-color: $ripoff-blue;
+        border-color: $ripoff-blue;
+        border-radius: 5px;
+        font-size: 14px;
+        font-weight: bold;
+        font-family: $header-btn-font;
+        color: white;        
+    }
+}

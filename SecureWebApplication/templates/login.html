@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="login-container">
+        <h1 class="login-container__h1">Please login to your account</h1>    
+
+        <form action='' method='post' class="login-form">
+                {{ form.csrf_token }}
+            <fieldset class="login-form__fieldset">
+                {{ form.email (placeholder='Email', class="login-form__input") }}
+                {{ form.password (placeholder='Password', class="login-form__input") }}
+                {{ form.submit (placeholder='Login', class="login-form__submit") }}
+            </fieldset>
+        </form>
+    </div>
+{% endblock content %}

@@ -1,0 +1,57 @@
+.home-container{
+    display: block;
+    margin: auto;
+    margin-top: 100px;
+    min-height: 83vh;
+    width: 85%;
+    text-align: left;
+    &__h1{
+        font-family: $header-btn-font;
+    }
+}
+
+.home-form{
+
+    &__label{
+        font-size: 14px;
+        font-family: $input-font;
+    }
+
+    &__file{
+        font-size: 14px;
+        font-family: $input-font;
+    }
+
+    &__submit{
+        height: 35px;
+        width: 80px;
+        background-color: $msg-yellow;
+        border-color: $msg-yellow;
+        border-radius: 5px;
+        font-size: 14px;
+        font-weight: bold;
+        font-family: $header-btn-font;
+        color: black;
+    }
+}
+
+.image-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    border: 1px solid black;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 15px;
+    &__box{
+        margin-top: 50px;
+    }
+    &__img{
+        display: block;
+        width: 350px;
+        height: auto;
+    }
+    &__a{
+        font-size: 14px;
+        font-family: $input-font;
+    }
+}

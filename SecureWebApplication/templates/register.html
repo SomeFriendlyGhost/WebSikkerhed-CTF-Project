@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="register-container">
+        <h1 class="register-container__h1">Enter your details to register your account</h1>
+        
+        <form action='' method='POST' class="register-form">
+            {{ form.csrf_token }}
+            <fieldset class="register-form__fieldset">
+                <div class="register-form__field">
+                    {{ form.firstname.label (class="register-form__label")}}
+                    {{ form.firstname (class="register-form__input")}}
+                </div>
+                <div class="register-form__field">
+                    {{ form.lastname.label (class="register-form__label")}}
+                    {{ form.lastname (class="register-form__input")}}
+                </div>
+                <div class="register-form__field">
+                    {{ form.email.label (class="register-form__label")}}
+                    {{ form.email (class="register-form__input")}}
+                </div>
+                <div class="register-form__field">
+                    {{ form.password.label (class="register-form__label")}}
+                    {{ form.password (class="register-form__input")}}
+                </div>
+                <div class="register-form__field">
+                    {{ form.confirm_password.label (class="register-form__label")}}
+                    {{ form.confirm_password (class="register-form__input")}}
+                </div>
+                <div class="register-form__field">
+                    {{ form.submit (class="register-form__submit")}}
+                </div>
+            </fieldset>
+        </form>
+    </div>
+{% endblock content %}

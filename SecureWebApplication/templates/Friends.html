@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="friend-container">
+        <h1 class="friend-container__h1">Add a friend, using their email address</h1>
+
+        <form action='' method='post' class="friend-form">
+            {{ form.csrf_token }}
+            <fieldset class="friend-form__fieldset">
+                {{ form.email (placeholder='email', class="friend-form__input") }}
+                {{ form.submit (placeholder='Add as friend', class="friend-form__submit") }}
+            </fieldset>
+        </form>
+    </div>
+{% endblock content %}

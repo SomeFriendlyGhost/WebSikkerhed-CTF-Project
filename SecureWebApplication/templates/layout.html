@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<link rel="stylesheet" href="../static/css/style.css">-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    <script src="https://kit.fontawesome.com/6cbfd91030.js" crossorigin="anonymous"></script>
+    <title>SecureWebApp</title>
+</head>
+<body>
+    <header>
+        <nav class="top-menu">
+            <a href="{{ url_for('home') }}" class="top-menu__a">Home <i class="fas fa-house-user"></i></a>
+            <a href="{{ url_for('friends') }}" class="top-menu__a">Friends <i class="fas fa-users"></i></a>
+            <a href="{{ url_for('login') }}" class="top-menu__a">Login <i class="fas fa-sign-in-alt"></i></a>
+            <a href="{{ url_for('register') }}" class="top-menu__a">Register <i class="fas fa-user-plus"></i></a>
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer class="bot-info">
+
+    </footer>
+</body>
+</html>

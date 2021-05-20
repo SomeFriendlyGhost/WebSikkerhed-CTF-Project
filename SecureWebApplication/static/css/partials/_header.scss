@@ -1,0 +1,20 @@
+header {
+    grid-area: h;
+    height: 50px;
+    width: auto;
+    background-color: $ripoff-blue;
+}
+
+.top-menu{
+    display: inline-block;
+    float: left;
+    margin-top: 10px;
+
+    &__a{
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        margin-left: 30px;
+        font-family: $menu-font;
+    }
+}

@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="home-container">
+        <h1 class="home-container__h1">Hej med {{ current_user.firstname }}</h1>
+        
+        <form action='' method="post" enctype="multipart/form-data" class="home-form">
+            {{ UploadPictureForm.csrf_token }}
+            {{ UploadPictureForm.picture.label (class="home-form__label") }}
+            {{ UploadPictureForm.picture (class="home-form__file") }}
+            {{ UploadPictureForm.submit (placeholder='Upload picture', class="home-form__submit") }}
+        </form>
+        <div class="image-container">        
+            {% if image_list %}
+                {% for image in image_list %}
+                    <div class="image-container__box">
+                        <img src=" {{ url_for('static', filename='pictures/' + image.image_name) }}" class="image-container__img">
+                        <a href="{{ url_for('comment', filename='pictures/' + image.image_name, id=image.id) }}" class="image-container__a">Click her to write a comment</a>
+                    </div>
+                {% endfor %}
+            {% endif %}        
+        </div>
+    </div>
+{% endblock content %}

@@ -1,0 +1,40 @@
+.login-container{
+    display: block;
+    margin: auto;
+    margin-top: 100px;
+    min-height: 83vh;
+    width: 500px;
+    text-align: center;
+
+    &__h1{
+        font-family: $header-btn-font;
+    }
+}
+
+.login-form{
+    &__fieldset{
+        border: 2px groove $ripoff-blue;
+    }
+    &__input{
+        display: block;
+        margin: auto;
+        width: 250px;
+        height: 30px;
+        margin-top: 15px;
+        color: black;
+        font-family: $input-font;
+        font-size: 16px;
+    }
+    &__submit{
+        height: 35px;
+        width: 80px;
+        margin-top: 20px;
+        background-color: $confirm-btn;
+        border-color: $confirm-btn;
+        border-radius: 5px;
+        font-size: 14px;
+        font-weight: bold;
+        font-family: $header-btn-font;
+        color: white;
+    }
+}

@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Source+Code+Pro:wght@500&family=Ubuntu&display=swap");
+header {
+  grid-area: h;
+  height: 50px;
+  width: auto;
+  background-color: #3b5998; }
+
+.top-menu {
+  display: inline-block;
+  float: left;
+  margin-top: 10px; }
+  .top-menu__a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    margin-left: 30px;
+    font-family: "Acme", sans-serif; }
+
+.login-container {
+  display: block;
+  margin: auto;
+  margin-top: 100px;
+  min-height: 83vh;
+  width: 500px;
+  text-align: center; }
+  .login-container__h1 {
+    font-family: "Source Code Pro", monospace; }
+
+.login-form__fieldset {
+  border: 2px groove #3b5998; }
+.login-form__input {
+  display: block;
+  margin: auto;
+  width: 250px;
+  height: 30px;
+  margin-top: 15px;
+  color: black;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px; }
+.login-form__submit {
+  height: 35px;
+  width: 80px;
+  margin-top: 20px;
+  background-color: #30D318;
+  border-color: #30D318;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Source Code Pro", monospace;
+  color: white; }
+
+.register-container {
+  display: block;
+  margin: auto;
+  margin-top: 100px;
+  min-height: 83vh;
+  width: 500px;
+  text-align: center; }
+  .register-container__h1 {
+    font-family: "Source Code Pro", monospace; }
+
+.register-form__fieldset {
+  border: 2px groove #30D318; }
+.register-form__field {
+  margin-top: 15px; }
+.register-form__label {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  color: black; }
+.register-form__input {
+  display: block;
+  margin: auto;
+  width: 250px;
+  height: 30px;
+  margin-top: 15px;
+  color: black;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px; }
+.register-form__submit {
+  height: 35px;
+  width: 100px;
+  margin-top: 20px;
+  background-color: #3b5998;
+  border-color: #3b5998;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Source Code Pro", monospace;
+  color: white; }
+
+.home-container {
+  display: block;
+  margin: auto;
+  margin-top: 100px;
+  min-height: 83vh;
+  width: 85%;
+  text-align: left; }
+  .home-container__h1 {
+    font-family: "Source Code Pro", monospace; }
+
+.home-form__label {
+  font-size: 14px;
+  font-family: "Ubuntu", sans-serif; }
+.home-form__file {
+  font-size: 14px;
+  font-family: "Ubuntu", sans-serif; }
+.home-form__submit {
+  height: 35px;
+  width: 80px;
+  background-color: #efe977;
+  border-color: #efe977;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Source Code Pro", monospace;
+  color: black; }
+
+.image-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  border: 1px solid black;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding: 15px; }
+  .image-container__box {
+    margin-top: 50px; }
+  .image-container__img {
+    display: block;
+    width: 350px;
+    height: auto; }
+  .image-container__a {
+    font-size: 14px;
+    font-family: "Ubuntu", sans-serif; }
+
+.friend-container {
+  display: block;
+  margin: auto;
+  margin-top: 100px;
+  min-height: 83vh;
+  width: 500px;
+  text-align: center; }
+  .friend-container__h1 {
+    font-family: "Source Code Pro", monospace; }
+
+.friend-form__fieldset {
+  border: 2px groove #3b5998; }
+.friend-form__input {
+  display: block;
+  margin: auto;
+  width: 250px;
+  height: 30px;
+  margin-top: 15px;
+  color: black;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px; }
+.friend-form__submit {
+  height: 35px;
+  width: 150px;
+  margin-top: 20px;
+  background-color: #30D318;
+  border-color: #30D318;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Source Code Pro", monospace;
+  color: white; }
+
+.comment-container {
+  display: block;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  min-height: 83vh;
+  width: 85%;
+  text-align: center; }
+  .comment-container__content {
+    float: left; }
+  .comment-container__img {
+    display: block;
+    margin: auto;
+    max-width: 900px;
+    height: auto;
+    border: 1px solid black; }
+  .comment-container__h2 {
+    font-family: "Ubuntu", sans-serif; }
+  .comment-container__list {
+    float: right;
+    overflow: scroll;
+    height: 650px;
+    border: 1px solid #3b5998; }
+  .comment-container__box {
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 600px;
+    height: auto;
+    background-color: #efe977;
+    border: 1px solid #3b5998;
+    border-radius: 5px;
+    text-align: left;
+    padding: 2px 5px 2px 5px; }
+  .comment-container__p {
+    color: black;
+    font-family: "Acme", sans-serif; }
+
+.comment-form__textarea {
+  width: 400px;
+  height: auto;
+  font-family: "Ubuntu", sans-serif;
+  color: black;
+  display: block;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+.comment-form__submit {
+  height: 35px;
+  width: 175px;
+  background-color: #3b5998;
+  border-color: #3b5998;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: "Source Code Pro", monospace;
+  color: white; }
+
+body {
+  display: grid;
+  grid-template-areas: 'h h h h h' 'm m m m m'; }
+
+main {
+  grid-area: m;
+  min-height: 100%;
+  margin: 0;
+  background: white;
+  background: radial-gradient(circle, white 0%, #cfcfcf 100%); }
+
+/*# sourceMappingURL=style.css.map */
