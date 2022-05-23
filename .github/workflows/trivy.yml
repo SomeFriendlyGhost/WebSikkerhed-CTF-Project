@@ -24,7 +24,7 @@ jobs:
 
       - name: Build an image from Dockerfile
         run: |
-          docker build -t vulnDocker/Dockerfile.
+          docker build -t --file vulnDocker/Dockerfile.
 
       - name: Run Trivy vulnerability scanner
         uses: aquasecurity/trivy-action@2a2157eb22c08c9a1fac99263430307b8d1bc7a2
