@@ -1,4 +1,4 @@
-name: build
+name: trivy_repo
 on:
   workflow_dispatch
 jobs:
